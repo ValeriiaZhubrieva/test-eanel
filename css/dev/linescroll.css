@@ -1,0 +1,36 @@
+.linescroll {
+  border-bottom: 1px solid var(--color-grey-88);
+  border-top: 1px solid var(--color-grey-88);
+  background-color: var(--color-white-solid);
+  padding-block: 50px;
+}
+.linescroll__title {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: var(--color-cyan-47);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.linescroll__items {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.linescroll__items [data-fls-marquee-inner] {
+  align-items: center;
+}
+.linescroll__item {
+  max-width: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (width < 48em) {
+  .linescroll__item {
+    margin-right: 50px !important;
+  }
+}

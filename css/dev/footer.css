@@ -1,0 +1,134 @@
+.footer {
+  padding-block: 60px 40px;
+  border-top: 1px solid var(--color-grey-88);
+  background-color: var(--color-white-solid);
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer__body:not(:last-child) {
+  margin-bottom: 50px;
+}
+.footer__info {
+  max-width: 408px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__info > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer__logo {
+  max-width: 105px;
+  width: 100%;
+  display: flex;
+}
+.footer__logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer__logo[href] {
+  transition: opacity 0.15s;
+}
+.footer__logo[href]:active {
+  opacity: 0.6;
+}
+.footer__text {
+  max-width: 240px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 170%;
+  color: var(--color-grey-42);
+}
+.footer__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer__menu {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer__menu-col {
+  flex: 1 1 auto;
+  max-width: 204px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__menu-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-grey-61);
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__menu-link {
+  max-width: fit-content;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--color-grey-42);
+  transition: color 0.15s;
+}
+.footer__menu-link:active {
+  color: var(--color-cyan-39);
+}
+.footer__bottom {
+  border-top: 1px solid var(--color-grey-88);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer__copy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--color-grey-61);
+}
+.footer__lang .lang-block__dropdown {
+  top: auto;
+  bottom: calc(100% + 8px);
+  left: auto;
+  right: 0;
+}
+@media (width < 40.625em) {
+  .footer__body {
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 50px;
+  }
+}
+@media (width < 30em) {
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__copy {
+    text-align: center;
+  }
+  .footer__lang .lang-block__dropdown {
+    right: -55px;
+  }
+}
+@media (any-hover: hover) {
+  .footer__logo[href]:hover {
+    opacity: 0.6;
+  }
+  .footer__menu-link:hover {
+    color: var(--color-cyan-39);
+  }
+}

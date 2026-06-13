@@ -1,0 +1,97 @@
+.integrations {
+  background-color: var(--color-grey-97);
+  padding-block: 100px;
+}
+.integrations__head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 58px;
+}
+.integrations__head > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.integrations__subtitle:not(:last-child) {
+  margin-bottom: 18px;
+}
+.integrations__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--color-grey-42);
+}
+.integrations__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+}
+.integrations__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+.integrations__item {
+  border: 1px solid var(--color-grey-88);
+  background-color: var(--color-white-solid);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  transition: border 0.15s;
+}
+.integrations__item[href]:active {
+  border-color: var(--color-cyan-39);
+}
+.integrations__item-icon {
+  border: 1px solid var(--color-grey-88);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.integrations__item-icon img,
+.integrations__item-icon svg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.integrations__item-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--color-grey-42);
+  word-break: break-word;
+}
+.integrations__bottom-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--color-grey-42);
+}
+.integrations__bottom-text a {
+  font-weight: 500;
+  color: var(--color-cyan-47);
+  transition: color 0.15s;
+}
+@media (width < 48em) {
+  .integrations {
+    padding-block: 50px;
+  }
+}
+@media (width < 30em) {
+  .integrations__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (any-hover: hover) {
+  .integrations__item[href]:hover {
+    border-color: var(--color-cyan-39);
+  }
+  .integrations__bottom-text a:hover {
+    color: var(--color-cyan-39);
+  }
+}
