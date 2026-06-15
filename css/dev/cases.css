@@ -37,12 +37,24 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 11px 18px;
+  gap: 11px 9px;
 }
 .cases__markets-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
+  width: 25px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cases__markets-item img,
+.cases__markets-item svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateZ(0);
 }
 .cases__items {
   display: flex;
@@ -139,6 +151,12 @@
   font-size: 11px;
   line-height: 125%;
   color: var(--color-grey-42);
+}
+.case-card__info-text img,
+.case-card__info-text svg {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
 }
 .case-card__items {
   margin-top: 14px;

@@ -66,14 +66,21 @@
   border: 2px solid var(--color-grey-97);
   border-radius: 50px;
   padding: 4px;
-  min-width: 26px;
-  min-height: 26px;
+  width: 26px;
+  height: 26px;
   font-weight: 600;
   font-size: 9px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero__bottom-item img,
+.hero__bottom-item svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateZ(0);
 }
 .hero__bottom-item:not(:first-child) {
   margin-left: -8px;
