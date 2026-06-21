@@ -22,21 +22,21 @@ var mockupScenarios = [
 				en: "Anker USB-C 65W",
 				ua: "Anker USB-C 65W",
 				price: "€29",
-				logo: "/assets/img/logos/anker.svg",
+				logo: "./assets/img/logos/anker.svg",
 				bg: "#01a8e2"
 			},
 			{
 				en: "Belkin Wireless",
 				ua: "Belkin Wireless",
 				price: "€39",
-				logo: "/assets/img/logos/belkin_logo_notm.svg",
+				logo: "./assets/img/logos/belkin_logo_notm.svg",
 				bg: "#000000"
 			},
 			{
 				en: "Baseus Car Mount",
 				ua: "Baseus для авто",
 				price: "€19",
-				logo: "/assets/img/logos/baseus.svg",
+				logo: "./assets/img/logos/baseus.svg",
 				bg: "#282828"
 			}
 		]
@@ -63,21 +63,21 @@ var mockupScenarios = [
 				en: "Nivea Day Cream",
 				ua: "Nivea Денний крем",
 				price: "€12",
-				logo: "/assets/img/logos/nivea.svg",
+				logo: "./assets/img/logos/nivea.svg",
 				bg: "#003366"
 			},
 			{
 				en: "L'Oréal Serum",
 				ua: "L'Oréal Сироватка",
 				price: "€24",
-				logo: "/assets/img/logos/loreal-paris-black-logo.svg",
+				logo: "./assets/img/logos/loreal-paris-black-logo.svg",
 				bg: "#fca5a5"
 			},
 			{
 				en: "Vichy Eye Cream",
 				ua: "Vichy Крем для очей",
 				price: "€18",
-				logo: "/assets/img/logos/vichy.svg",
+				logo: "./assets/img/logos/vichy.svg",
 				bg: "#9b8cf5"
 			}
 		]
@@ -104,21 +104,21 @@ var mockupScenarios = [
 				en: "IKEA Floor Lamp",
 				ua: "IKEA Підлогова лампа",
 				price: "€89",
-				logo: "/assets/img/logos/ikea.svg",
+				logo: "./assets/img/logos/ikea.svg",
 				bg: "#0058a3"
 			},
 			{
 				en: "H&M Home Lamp",
 				ua: "H&M Home Лампа",
 				price: "€59",
-				logo: "/assets/img/logos/hm.svg",
+				logo: "./assets/img/logos/hm.svg",
 				bg: "#e50010"
 			},
 			{
 				en: "Zara Home Light",
 				ua: "Zara Home Світло",
 				price: "€120",
-				logo: "/assets/img/logos/zarahome.svg",
+				logo: "./assets/img/logos/zarahome.svg",
 				bg: "#f0f0ee"
 			}
 		]
@@ -145,21 +145,21 @@ var mockupScenarios = [
 				en: "Nike Yoga Mat",
 				ua: "Nike Йога килимок",
 				price: "€45",
-				logo: "/assets/img/logos/nike.svg",
+				logo: "./assets/img/logos/nike.svg",
 				bg: "#111111"
 			},
 			{
 				en: "Adidas Gym Mat",
 				ua: "Adidas Килимок",
 				price: "€55",
-				logo: "/assets/img/logos/adidas.svg",
+				logo: "./assets/img/logos/adidas.svg",
 				bg: "#000000"
 			},
 			{
 				en: "Decathlon Mat",
 				ua: "Decathlon Килимок",
 				price: "€22",
-				logo: "/assets/img/logos/decathlon-1.svg",
+				logo: "./assets/img/logos/decathlon-1.svg",
 				bg: "#0082c3"
 			}
 		]
