@@ -147,7 +147,7 @@
     right: 4px;
     position: absolute;
     width: 22px;
-    height: 1.5px;
+    height: 2px;
     border-radius: 2px;
     background-color: var(--color-grey-5);
   }
@@ -158,17 +158,17 @@
     bottom: 4px;
   }
   .icon-menu span {
-    top: calc(50% - 0.75px);
+    top: calc(50% - 1px);
   }
   [data-fls-menu-open] .icon-menu span {
     width: 0;
   }
   [data-fls-menu-open] .icon-menu::before {
-    top: calc(50% - 0.75px);
+    top: calc(50% - 1px);
     transform: rotate(-45deg);
   }
   [data-fls-menu-open] .icon-menu::after {
-    bottom: calc(50% - 0.75px);
+    bottom: calc(50% - 1px);
     transform: rotate(45deg);
   }
 }

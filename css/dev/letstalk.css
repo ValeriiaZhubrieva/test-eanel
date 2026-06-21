@@ -81,6 +81,30 @@
   text-align: center;
   color: var(--color-white--350);
 }
+.letstalk__payments {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.letstalk__payment {
+  max-width: fit-content;
+  border: 1px solid var(--color-white--400);
+  border-radius: 7px;
+  min-width: 56px;
+  min-height: 39px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letstalk__payment img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 @media (width < 48em) {
   .letstalk {
     padding-block: 90px;

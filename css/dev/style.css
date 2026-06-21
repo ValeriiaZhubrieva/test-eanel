@@ -124,56 +124,6 @@ address {
   --color-white--350: rgba(255, 255, 255, 0.35);
   --color-white--400: rgba(255, 255, 255, 0.4);
   --color-white--600: rgba(255, 255, 255, 0.6);
-  --app-alizarin-crimson: #dc2626;
-  --app-blue-ribbon: #0057e7;
-  --app-blue-ribbon: #0070f2;
-  --app-bourbon: #c0791a;
-  --app-buttercup: #f39c12;
-  --app-cerulean: #009edb;
-  --app-chestnut-rose: #c94c6e;
-  --app-cinnabar: #e74c3c;
-  --app-cod-gray: #0d0d0d;
-  --app-deep-blush: #e86487;
-  --app-desert-storm: #f8f8f6;
-  --app-desert-storm: #f0f0ee;
-  --app-dove-gray: #6b6b6b;
-  --app-dusty-gray: #9b9b9b;
-  --app-eastern-blue: #1e8fa8;
-  --app-eminence: #5e2d91;
-  --app-emperor: #555;
-  --app-feta: #e8f8fc;
-  --app-gray-chateau: #9ca3af;
-  --app-humming-bird: #e8f8fc;
-  --app-jewel: #1a7a40;
-  --app-jungle-green: #27ae60;
-  --app-magic-mint: #86efac;
-  --app-mirage: #1a1a2e;
-  --app-mountain-meadow: #1c9d5c;
-  --app-portage: #9b8cf5;
-  --app-provincial-pink: #f8f8f6;
-  --app-quill-gray: #e2e2de;
-  --app-razzmatazz: #df0067;
-  --app-salem: #1c9d5c;
-  --app-sazerac: #f0f0ee;
-  --app-scooter: #2cacc6;
-  --app-selago: #e8f8fc;
-  --app-silver-chalice: #aaa;
-  --app-studio: #7f54b3;
-  --app-studio: #8e44ad;
-  --app-sushi: #96bf48;
-  --app-sweet-pink: #fca5a5;
-  --app-tango: #f46f25;
-  --app-tuna: #34313f;
-  --app-white: #fff;
-  --app-white-100: rgba(255, 255, 255, 0.1);
-  --app-white-150: rgba(255, 255, 255, 0.15);
-  --app-white-300: rgba(255, 255, 255, 0.3);
-  --app-white-350: rgba(255, 255, 255, 0.35);
-  --app-white-400: rgba(255, 255, 255, 0.4);
-  --app-white-600: rgba(255, 255, 255, 0.6);
-  --app-white-70: rgba(255, 255, 255, 0.07);
-  --app-white-desert-storm: #fff;
-  --app-wisp-pink: #e8f8fc;
 }
 
 @supports (height: 100dvh) {
@@ -325,9 +275,20 @@ textarea {
 }
 
 textarea.input {
-  resize: vertical;
+  resize: none;
 }
 
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-field__label {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 125%;
+}
 .region-block {
   max-width: fit-content;
   position: relative;
@@ -781,6 +742,9 @@ textarea.input {
   }
   .title--h2 {
     font-size: 32px;
+  }
+  .input-field__label {
+    font-size: 14px;
   }
 }
 @media (width >= 30em) and (width < 73.25em){

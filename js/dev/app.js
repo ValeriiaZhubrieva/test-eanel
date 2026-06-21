@@ -38,6 +38,12 @@ var bodyLock = (delay = 500) => {
 		}, delay);
 	}
 };
+function getDigFormat(item, sepp = " ") {
+	return item.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1${sepp}`);
+}
+function uniqArray(array) {
+	return array.filter((item, index, self) => self.indexOf(item) === index);
+}
 var gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
 	const targetBlockElement = document.querySelector(targetBlock);
 	if (targetBlockElement) {
@@ -316,4 +322,4 @@ if (toggleActiveBtns.length) toggleActiveBtns.forEach((btn) => {
 	});
 });
 //#endregion
-export { gotoBlock as a, getHash as i, bodyLockToggle as n, bodyUnlock as r, bodyLockStatus as t };
+export { getHash as a, getDigFormat as i, bodyLockToggle as n, gotoBlock as o, bodyUnlock as r, uniqArray as s, bodyLockStatus as t };
