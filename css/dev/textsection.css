@@ -155,6 +155,10 @@
   color: var(--color-cyan-39);
   text-decoration: none;
 }
+.textsection__body ul,
+.textsection__body ol {
+  padding-left: 21px;
+}
 .textsection__body ul {
   display: flex;
   flex-direction: column;
@@ -445,6 +449,10 @@
 .block-quote__content a:not([class]):active {
   color: var(--color-cyan-39);
   text-decoration: none;
+}
+.block-quote__content ul,
+.block-quote__content ol {
+  padding-left: 21px;
 }
 .block-quote__content ul {
   display: flex;
