@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Що обрати для smart-пошуку — плагін чи API?</title>
+		<link rel="modulepreload" crossorigin="" href="./js/rolldown-runtime.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/inputmask.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/digcounter.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/dynamic.min.js?v=1782987055270">
+		<link rel="modulepreload" crossorigin="" href="./js/menu.min.js?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1782987055270">
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/news.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/promo.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/questions.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/textsection.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1782987055270">
+		<link rel="stylesheet" crossorigin="" href="./css/header.min.css?v=1782987055270">
+	</head>
+	<body>
+		<div class="wrapper" data-top-position="">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="#" class="header__logo">
+							<img alt="logo" loading="lazy" src="./assets/img/logo.webp">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<div class="menu__head"></div>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a data-fls-scrollto="#cases" data-fls-scrollto-header="" href="#" class="menu__link">Product</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto="#features" data-fls-scrollto-header="" href="#" class="menu__link">Features</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto="#pricing" data-fls-scrollto-header="" href="#" class="menu__link">Pricing</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto="#integrations" data-fls-scrollto-header="" href="#" class="menu__link">Integrations</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="menu__actions">
+								<div data-sel-block="" class="menu__region region-block">
+									<button type="button" class="region-block__current" data-sel-block-current="">
+										<span class="region-block__value">
+											<span data-sel-block-value="">
+												<span class="region-block__flag">
+													<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/fr.webp">
+												</span>
+												<span class="region-block__name">France</span>
+											</span>
+										</span>
+										<span class="region-block__arrow">
+											<svg width="16" height="9" viewbox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+									</button>
+									<div class="region-block__dropdown" data-sel-block-dropdown="">
+										<div class="region-block__head">
+											<div class="region-block__title">Your region is France</div>
+											<div class="region-block__text">We’ll personalize content for you region</div>
+											<button type="button" class="region-block__btn button">Yes, France is correct</button>
+											<form class="region-block__search search-field">
+												<input autocomplete="off" type="text" name="search" placeholder="Search" class="search-field__input">
+												<button type="submit" class="search-field__icon">
+													<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6.75 11.25L2.25 15.75M10.5 12.75C13.3995 12.75 15.75 10.3995 15.75 7.5C15.75 4.60051 13.3995 2.25 10.5 2.25C7.6005 2.25 5.25 4.60051 5.25 7.5C5.25 10.3995 7.6005 12.75 10.5 12.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</button>
+											</form>
+										</div>
+										<div class="region-block__scroll">
+											<div class="region-block__options">
+												<button data-sel-block-btn="" type="button" class="region-block__option is-active">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/fr.webp">
+													</span>
+													<span class="region-block__name">France</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/ua.webp">
+													</span>
+													<span class="region-block__name">Ukraine</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/nd.webp">
+													</span>
+													<span class="region-block__name">Netherlands</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/de.webp">
+													</span>
+													<span class="region-block__name">Germany</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/pl.webp">
+													</span>
+													<span class="region-block__name">Poland</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-fls-dynamic=".menu__head, 768" class="menu__lang lang-block" data-drop-block="">
+									<button type="button" class="lang-block__current" data-drop-toggle="">EN</button>
+									<div class="lang-block__dropdown">
+										<a href="#" class="lang-block__link is-active">English</a>
+										<a href="#" class="lang-block__link">Українська</a>
+									</div>
+								</div>
+								<button data-fls-scrollto="#questions" data-fls-scrollto-header="" type="button" class="menu__btn button button--third">Get Early Access</button>
+								<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+									<span></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="promo promo--bottom-content">
+					<div class="promo__bg">
+						<picture>
+							<source media="(max-width: 650px)" srcset="./assets/img/promo-bg-3-mob.webp">
+							<img alt="Image" loading="lazy" src="./assets/img/promo-bg-3.webp">
+						</picture>
+					</div>
+					<div class="promo__breadcrumbs breadcrumbs">
+						<div class="breadcrumbs__container">
+							<a href="#" class="breadcrumbs__link">Головна</a>
+							<a href="#" class="breadcrumbs__link">Блог</a>
+							<span class="breadcrumbs__link">Що обрати для smart-пошуку — плагін чи API?</span>
+						</div>
+					</div>
+					<div class="promo__container">
+						<div class="promo__body promo__body--fw">
+							<h1 class="promo__title title title--h1">Що обрати для smart-пошуку — плагін чи API?</h1>
+							<div class="promo__text">Та до чого тут "автопідказки".</div>
+							<div data-fls-watcher="" data-fls-watcher-threshold="0.2" data-fls-watcher-once="" class="promo__items">
+								<div class="promo__item">
+									<div class="promo__item-value">
+										+
+										<span data-fls-digcounter="">41</span>
+										%
+									</div>
+									<div class="promo__item-label">Conversion</div>
+								</div>
+								<div class="promo__item">
+									<div class="promo__item-value">
+										<span data-fls-digcounter="">223</span>
+									</div>
+									<div class="promo__item-label">Conversion</div>
+								</div>
+								<div class="promo__item">
+									<div class="promo__item-value">
+										<span data-fls-digcounter="">2021</span>
+									</div>
+									<div class="promo__item-label">Conversion</div>
+								</div>
+								<div class="promo__item">
+									<div class="promo__item-value">
+										<span data-fls-digcounter="">38</span>
+										%
+									</div>
+									<div class="promo__item-label">Conversion</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="textsection">
+					<div class="textsection__container">
+						<div class="textsection__wrapper">
+							<div class="textsection__body">
+								<div class="textsection__author">
+									<div class="textsection__author-body">
+										<figure class="textsection__author-img">
+											<img width="56" height="56" alt="Image" loading="lazy" src="./assets/img/photo-man.webp">
+										</figure>
+										<div class="textsection__author-name">Катерина Притуляк</div>
+									</div>
+									<div class="textsection__socials socials-block">
+										<a href="#" class="socials-block__link">gh</a>
+										<a href="#" class="socials-block__link">𝕏</a>
+										<a href="#" class="socials-block__link">in</a>
+									</div>
+								</div>
+								<figure>
+									<img width="1140" height="575" alt="Image" loading="lazy" src="./assets/img/article/image-3.webp">
+								</figure>
+								<p>
+									Вводите букву "К" в пошук — і бачите “ковдру” замість “конструктора”? Одна й та сама літера, а
+					результати наче з двох паралельних світів. Можливо, справа в типі пошуку. Розказуємо, як обрати
+					інтеграцію розумного пошуку під реальні потреби бізнесу.
+								</p>
+								<h6>Плагін</h6>
+								<p>
+									Віджет, який підключається до сайту як єдиний блок пошуку. Головна місія — швидко інтегрувати базову
+					версію. Достатньо вставити скрипт Multisearch, і він змінить стандартну версію пошуку.
+								</p>
+								<div class="block-border">
+									<p>
+										<b>1 — Інтегрується менш ніж за 15 хвилин</b>
+										— підходить для будь-якої CMS і не потребує
+						залучення програмістів.
+									</p>
+									<p>
+										<b>2 — Охвачує всі товари та категорії у вашій CMS / базі даних</b>
+										— робить видачу більш
+						релевантною.
+									</p>
+									<p>
+										<b>3 — Оперує повною видачею</b>
+										— показує всі товари, які відповідають запиту, без обмежень по
+						кількості.
+									</p>
+									<p>
+										<b>4 — Змінює вигляд через перевизначення CSS-стилів</b>
+										— дозволяє адаптувати оформлення
+						пошукового рядка.
+									</p>
+								</div>
+								<figure>
+									<img width="1140" height="703" alt="Image" loading="lazy" src="./assets/img/article/image-4.webp">
+									<figcaption>
+										Візуалізація товарів у плагіні магазину
+										<a href="https://www.atbmarket.com/" target="_blank">atbmarket.com</a>
+									</figcaption>
+								</figure>
+								<h6>Для кого і для чого?</h6>
+								<ul class="list-check">
+									<li>Для магазинів нішевих товарів</li>
+									<li>Для малого та середнього бізнесу</li>
+									<li>За відсутності штатних розробників</li>
+									<li>Коли бракує часу на впровадження</li>
+									<li>Якщо треба смарт-пошук “тут і зараз”</li>
+								</ul>
+								<p>
+									<b>Ідеальний для бізнесів зі спеціалізованим асортиментом.</b>
+									Наприклад: білизна, парфуми,
+					канцелярія. Доступна швидка візуалізація товарів при звуженій видачі — без гортання та з фільтрацією
+					“за категорією”.
+								</p>
+								<figure>
+									<img width="1140" height="575" alt="Image" loading="lazy" src="./assets/img/article/image-1.webp">
+									<figcaption>
+										Один із варіантів оформлення пошукового рядка з плагін-інтеграцією в
+										<a href="https://www.argo.ua/" target="_blank">argo.ua</a>
+									</figcaption>
+								</figure>
+								<h6>АРІ</h6>
+								<p class="mob-small-text">
+									Конструктор з набором деталей, які розширюють пошукові можливості та посилюють маркетинг. Головна
+					місія — ваш контроль над логікою та візуалом розумного пошуку незалежно від архітектури сайту.
+								</p>
+								<div class="block-border">
+									<p>
+										<b>1— Підтримує інтеграцію з будь-якими e-commerce-функціями</b>
+										— від додавання товарів у кошик
+						прямо зі сторінки пошуку до різних видів фільтрації й посторінкової видачі.
+									</p>
+									<p>
+										<b>2 — Кастомізує кожен елемент</b>
+										— ви контролюєте логіку пошуку, сортування товарів,
+						підказки, дизайн сторінки та взаємодію з іншими модулями сайту.
+									</p>
+									<p>
+										<b>3 — Робить доступною глибоку аналітику</b>
+										— дозволяє відстежувати всі дії користувача через
+						Google Analytics, GTM чи власні метрики: від кліку по підказці до купівлі.
+									</p>
+									<p>
+										<b>4 — Обходить обмеження платформи</b>
+										— API працює із сайтами будь-якого типу: React, Vue,
+						Laravel,
+						Shopify, Headless CMS тощо.
+									</p>
+								</div>
+								<figure>
+									<img width="1140" height="964" alt="Image" loading="lazy" src="./assets/img/article/image-2.webp">
+									<figcaption>
+										Завдяки АPI на сайті
+										<a href="https://www.yabloki.ua/" target="_blank">yabloki.ua</a>
+										доступна
+						функція “В кошик”, а також можливість сортування
+									</figcaption>
+								</figure>
+								<h6>Для кого і для чого?</h6>
+								<ul class="list-check">
+									<li>Для будь-яких сайтів і маркетплейсів</li>
+									<li>Для e-commerce з високим трафіком</li>
+									<li>Коли треба додаткові інструменти для маркетингу</li>
+									<li>Якщо принципово зберегти унікальний стиль</li>
+									<li>Для сайтів з нестандартною архітектурою</li>
+								</ul>
+								<p>
+									<b>Незамінний для масштабування.</b>
+									Завдяки API можливості пошуку виходять на новий рівень.
+					Маркетинг набуває суперсили, коли Multisearch налаштовує для вас синоніми під нішу, динамічні
+					фільтри та інші пошукові фішки. Або ж ви самі обираєте, який набір інструментів увімкнути.
+								</p>
+								<figure>
+									<img width="1140" height="998" alt="Image" loading="lazy" src="./assets/img/article/image-5.webp">
+									<figcaption>Видача з пральними машинами за синонімічним запитом “стіралка”</figcaption>
+								</figure>
+								<figure>
+									<img width="1140" height="998" alt="Image" loading="lazy" src="./assets/img/article/image-6.webp">
+									<figcaption>Динамічні фільтри, які звужують видачу — і допомагають знаходити швидше</figcaption>
+								</figure>
+								<p class="mob-small-text">
+									Також API підтримує функціонал, який працює на базі АІ (Machine Learning). Отже ви можете
+					аналізувати поведінку користувачів і пропонувати товари, які покупці готові вже зараз покласти до
+					кошика.
+								</p>
+								<h6>Гібридна інтеграція</h6>
+								<p class="mob-small-text">
+									Поєднання плагіна + сторінки результатів по API. У роботі з пошуком на сайті досвід користувача (UX)
+					— ключове. Від того, як система допомагає юзеру знайти товар і наскільки комфортно це відбувається —
+					залежать продажі. Ось чому команда Multisearch передбачила також змішаний тип інтеграції.
+								</p>
+								<p class="mob-small-text">
+									До прикладу,
+									<a href="http://www.atbmarket.com" target="_blank">atbmarket.com</a>
+									рухались від
+					найпростішого: спочатку інтегрували плагін, а потім поєднали його з API.
+								</p>
+								<div class="block-quote">
+									<div class="block-quote__head">
+										<figure class="block-quote__img">
+											<img width="423" height="166" alt="Image" loading="lazy" src="./assets/img/article/atb.webp">
+										</figure>
+										<div class="block-quote__info">
+											<div class="block-quote__info-title">АТБ-Маркет</div>
+											<div class="block-quote__info-text">
+												<a href="http://www.atbmarket.com" target="_blank">atbmarket.com</a>
+											</div>
+										</div>
+									</div>
+									<div class="block-quote__content">
+										<p class="small-text">
+											Інтеграція плагіна не була складною: встановили скрипт, протестували, запустили на проді.
+							Інтеграція по API була складнішою, але також обійшлася без великих труднощів.
+										</p>
+									</div>
+								</div>
+								<h6>Як це працює?</h6>
+								<ul class="no-marker middle-text" style="color: var(--color-grey-42);">
+									<li>
+										<i>
+											Гібридна інтеграція дає можливість переходу з плагіна пошуку через Enter на сторінку
+							результатів.
+										</i>
+									</li>
+									<li>
+										<i>
+											“А чому пошук не підказує, коли я друкую?”, — найпоширеніше запитання, яке чує команда
+							підтримки.
+										</i>
+									</li>
+									<li>
+										◼️
+										<i>
+											Лише в плагіні ця функція неможлива — треба клікати, щоб перейти на товар або категорію.
+							Клієнт встановлює пошук, формує запит в рядку, тисне Enter — однак нічого не
+							відбувається.
+										</i>
+									</li>
+									<li>
+										◼️
+										<i>
+											Плагін та автопідказки — зовсім різні інструменти. Їх часто плутають через спільні
+							функції:
+							побуквенну видачу та режим ріалтайм. Але обидві фічі не можуть бути увімкнені одночасно —
+							потрібен повний перехід на API.
+										</i>
+									</li>
+								</ul>
+								<h6>Плагін VS Автопідказки</h6>
+								<p>
+									Плагін → повна видача: всі товари відповідно до запиту.
+									<br>
+									Автопідказки → звужена видача: по 3-5 товарів на запит.
+								</p>
+								<p>
+									Плагін → повна видача: всі товари відповідно до запиту.
+									<br>
+									Автопідказки → звужена видача: по 3-5 товарів на запит.
+								</p>
+								<div class="block-border middle-font-pc">
+									<p>
+										Плагін → надає готовий результат: аналізує всі товари, які знайшов.
+										<br>
+										Автопідказки → вгадують запит користувача за кількома символами.
+									</p>
+								</div>
+								<figure>
+									<img width="1140" height="503" alt="Image" loading="lazy" src="./assets/img/article/image-7.webp">
+									<figcaption>
+										Плагін-інтеграція на
+										<a href="http://www.myplay.ua" target="_blank">myplay.ua</a>
+										— пошукові
+						результати відповідно до слова “стіл”. У видачі
+						зібрані різні види столів з асортименту.
+									</figcaption>
+								</figure>
+								<p class="mob-small-text">
+									З плагіном система пошуку опрацьовує будь-який запит як повноцінний навіть з 1 літери: до нього
+					застосовуються алгоритми транслітерації, морфології, виправлення помилок, зміни розкладки тощо. На
+					основі такого запиту відображаються релевантні товари.
+								</p>
+								<figure>
+									<img width="1140" height="503" alt="Image" loading="lazy" src="./assets/img/article/image-7.webp">
+									<figcaption>
+										Автопідказки в
+										<a href="http://www.antoshka.ua" target="_blank">antoshka.ua</a>
+										відповідно до
+						запиту “стіл” покажуть користувачу не лише столи, але й стільці.
+									</figcaption>
+								</figure>
+								<p class="mob-small-text">
+									Автопідказки з першої літери прогнозують запити та пропонують ймовірні продовження назв товарів,
+					категорій та брендів. І доступні винятково через АРІ.
+								</p>
+								<p class="mob-small-text">
+									<b>Гібридизація може бути проміжним рішенням</b>
+									для переходу від плагіна до розумних автопідказок.
+								</p>
+								<div class="block-quote">
+									<div class="block-quote__head">
+										<figure class="block-quote__img block-quote__img--circle">
+											<img width="80" height="80" alt="Image" loading="lazy" src="./assets/img/article/photo-girl.webp">
+										</figure>
+										<div class="block-quote__info">
+											<div class="block-quote__info-title">Олександра Саєнко</div>
+											<div class="block-quote__info-text">Support-менеджер в Multisearch</div>
+										</div>
+									</div>
+									<div class="block-quote__content">
+										<p class="small-text">
+											Наприклад, швидким запитам буває в плагіні легше отримати результати. Однак підказки в свою
+							чергу можуть пропонувати розширення та надавати контексту.
+											<br>
+											Гібридність — це про зручність користувача, який не завжди очікує отримати "імітацію"
+							автопідказок.
+											<br>
+											Часом клієнт хоче по-різному опрацювати один і той самий запит або подивитися видачу в
+							плагіні та побачити результати в пошуку.
+										</p>
+									</div>
+								</div>
+								<h6>На кожен запит — своє рішення</h6>
+								<ul class="no-marker small-text" style="color: var(--color-grey-42);">
+									<li>
+										Плагін, API чи гібридна інтеграція мають окремі переваги. Все залежить від сайту, можливостей
+						команди та бізнес‑цілей.
+									</li>
+									<li>+ Плагін — щоб прокачати пошук оперативно і без програмістів.</li>
+									<li>+ Гібрид — коли потрібен розумний пошук з мінімальною кастомізацією.</li>
+									<li>+ API — якщо необхідна максимальна гнучкість і повний контроль маркетингу.</li>
+								</ul>
+								<p class="middle-font">Що кажуть клієнти Multisearch з різним досвідом інтеграції смарт-пошуку?</p>
+								<p class="small-text" style="color: var(--color-grey-42);">
+									<b class="middle-font">Плагін-рішення</b>
+									→
+									<a href="http://www.zolotoyvek.ua" target="_blank">zolotoyvek.ua</a>
+								</p>
+								<div class="block-quote">
+									<div class="block-quote__head">
+										<figure class="block-quote__img">
+											<img width="423" height="166" alt="Image" loading="lazy" src="./assets/img/article/zv.webp">
+										</figure>
+										<div class="block-quote__info">
+											<div class="block-quote__info-title">Золотий вік</div>
+											<div class="block-quote__info-text">
+												<a href="http://www.zolotoyvek.ua" target="_blank">zolotiyvik.ua</a>
+											</div>
+										</div>
+									</div>
+									<div class="block-quote__content">
+										<p class="small-text">
+											Ми шукали максимально швидке та гнучке рішення, яке дозволяє протестувати функціонал без
+							глибокого залучення розробників. Плагінова інтеграція ідеально вписалась у наші вимоги з
+							точки зору швидкого запуску та масштабування.
+										</p>
+										<p class="small-text">
+											Установка була справді простою: завдяки готовому рішенню та підтримці команди Multisearch ми
+							змогли інтегрувати пошук менш ніж за тиждень. Важливо, що це не потребувало змін у бекенді —
+							все реалізується через фронт.
+										</p>
+										<h6>Топ-3 переваги плагін-інтеграції</h6>
+										<ul class="no-marker small-text">
+											<li>+ Мінімальні ресурси команди з нашого боку.</li>
+											<li>+ Можливість адаптувати логіку та дизайн без зайвих складностей.</li>
+											<li>+ Користувачі знаходять товари швидше, що позитивно впливає на конверсію.</li>
+										</ul>
+									</div>
+								</div>
+								<p class="small-text-mob-sm" style="color: var(--color-grey-42);">
+									<b class="middle-font">Плагін | Плагін + АРІ</b>
+									→
+									<a href="http://www.ars.ua" target="_blank">ars.ua</a>
+								</p>
+								<div class="block-quote">
+									<div class="block-quote__head">
+										<figure class="block-quote__img">
+											<img width="423" height="99" alt="Image" loading="lazy" src="./assets/img/article/apc.webp">
+										</figure>
+										<div class="block-quote__info">
+											<div class="block-quote__info-title">АРС</div>
+											<div class="block-quote__info-text">
+												<a href="http://www.ars.ua" target="_blank">ars.ua</a>
+											</div>
+										</div>
+									</div>
+									<div class="block-quote__content">
+										<p class="small-text middle-font">
+											<i>
+												Обрали саме плагінове рішення для інтеграції, тому що це був найшвидший і найпростіший
+								спосіб перевірити ефективність Multisearch.
+											</i>
+										</p>
+										<p class="small-text">
+											Для установки не довелось навіть залучати розробників, просто встановили скрипт через
+							адмін-панель, використовуючи стандартні засоби екомерс-платформи.
+										</p>
+										<p class="small-text">
+											Головні переваги плагін-інтеграції: швидкість встановлення та самодостатня функціональність
+							плагіну з усіма життєво необхідними функціями.
+										</p>
+										<p class="small-text middle-font">
+											<i>Спочатку обрали плагін, а потім зробили вибір на користь АРІ.</i>
+										</p>
+										<p class="small-text">
+											Проаналізували поведінку користувачів та різницю в результатах пошуку від Multisearch та
+							штатного платформи.
+										</p>
+										<p class="small-text">
+											Через те, що достатньо багато користувачів відвідували сторінку результатів пошуку, яка
+							відрізнялась результатами від плагіну, прийняли рішення повноцінно інтегруватись по API, щоб
+							результати пошуку усюди були консистентні.
+										</p>
+									</div>
+								</div>
+								<p class="small-text-mob-sm" style="color: var(--color-grey-42);">
+									<b class="middle-font">Плагін | Плагін + АРІ | Розумні автопідказки</b>
+									→
+									<a href="http://www.rooler.ua" target="_blank">rooler.ua</a>
+								</p>
+								<div class="block-quote">
+									<div class="block-quote__head">
+										<figure class="block-quote__img">
+											<img width="423" height="99" alt="Image" loading="lazy" src="./assets/img/article/rooler.webp">
+										</figure>
+										<div class="block-quote__info">
+											<div class="block-quote__info-title">Rooler</div>
+											<div class="block-quote__info-text">
+												<a href="http://www.rooler.ua" target="_blank">rooler.ua</a>
+											</div>
+										</div>
+									</div>
+									<div class="block-quote__content">
+										<p class="small-text">
+											З ціллю оптимізації витрат на розробку і щоб зрозуміти чи точно рішення нам підходить, ми
+							обрали плагін. Якщо оцінювати часовий проміжок, то це було доволі швидко, порівняно з іншими
+							зовнішніми системами.
+										</p>
+										<p class="small-text middle-font">
+											Ключовим моментом до переходу стало бажання реалізувати Автопідказки. Динамічні фільтри
+							також працюють тільки через APІ.
+										</p>
+										<p class="small-text">
+											Для нашого сайту на початковому етапі розробки вже було зрозуміло, що ми будемо
+							використовувати ваш пошук, і дизайн вашого пошуку нам подобався. Тому навіть після переходу
+							на API ми дизайн вікна зробили у вашому стилі.
+										</p>
+									</div>
+								</div>
+								<p class="small-text-mob-sm" style="color: var(--color-grey-42);">
+									<b class="middle-font">Плагін | АРІ</b>
+									→
+									<a href="http://www.ksd.ua" target="_blank">ksd.ua</a>
+								</p>
+								<div class="block-quote">
+									<div class="block-quote__head">
+										<figure class="block-quote__img">
+											<img width="151" height="68" alt="Image" loading="lazy" src="./assets/img/article/ksd.webp">
+										</figure>
+										<div class="block-quote__info">
+											<div class="block-quote__info-title">КСД</div>
+											<div class="block-quote__info-text">
+												<a href="http://www.ksd.ua" target="_blank">ksd.ua</a>
+											</div>
+										</div>
+									</div>
+									<div class="block-quote__content">
+										<p class="small-text">
+											Плагінове рішення було для швидкої інтеграції на старому сайті. Це незалежність від
+							технічних характеристик платформи та відсутність потреби лізти в код.
+										</p>
+										<p class="small-text middle-font">Чому пізніше зробили вибір на користь АРІ?</p>
+										<p class="small-text">Бо виникла потреба більш гнучкого налаштування (сайт + апки).</p>
+									</div>
+								</div>
+								<h6>Хочете, щоб пошук продавав як топовий маркетолог?</h6>
+								<p class="mob-small-text">
+									<a href="https://multisearch.io/ua/quick_start" target="_blank">Залишайте заявку</a>
+									— підкажемо,
+					який тип інтеграції збільшить конверсії вашого сайту та зробить нових
+					клієнтів постійними.
+								</p>
+								<div class="author-block">
+									<div class="author-block__body">
+										<figure class="author-block__img">
+											<img width="80" height="80" alt="Image" loading="lazy" src="./assets/img/article/photo-girl.webp">
+										</figure>
+										<div class="author-block__info">
+											<div class="author-block__title">Автор</div>
+											<div class="author-block__name">Катерина Притуляк</div>
+											<div class="author-block__text">
+												Копірайтер Multisearch. Пишу тексти, які об’єднують потрібних людей та сенси у digital.
+											</div>
+										</div>
+									</div>
+									<div class="author-block__contacts">
+										<div class="author-block__label">Поділитися:</div>
+										<div class="author-block__socials socials-block">
+											<a href="#" class="socials-block__link">gh</a>
+											<a href="#" class="socials-block__link">𝕏</a>
+											<a href="#" class="socials-block__link">in</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<aside class="textsection__aside aside-article">
+								<div class="aside-article__topics">
+									<div class="aside-article__head">
+										<div class="aside-article__title">Topics</div>
+										<div class="aside-article__date">24.05.2026</div>
+									</div>
+									<div class="aside-article__tags">
+										<a href="#" class="aside-article__tag">Markets</a>
+										<a href="#" class="aside-article__tag">Strategy</a>
+										<a href="#" class="aside-article__tag">Defense</a>
+										<a href="#" class="aside-article__tag">ESG</a>
+										<a href="#" class="aside-article__tag">Portfolio</a>
+										<a href="#" class="aside-article__tag">Capital</a>
+										<a href="#" class="aside-article__tag">Baltic</a>
+										<a href="#" class="aside-article__tag">Growth</a>
+									</div>
+								</div>
+								<div class="aside-article__block">
+									<div class="aside-article__head">
+										<div class="aside-article__title">About the Author</div>
+									</div>
+									<div class="aside-article__author">
+										<div class="aside-article__author-top">
+											<figure class="aside-article__author-img">
+												<img width="38" height="38" alt="Image" loading="lazy" src="./assets/img/photo-man.webp">
+											</figure>
+											<div class="aside-article__author-name">
+												Senior
+												<br>
+												Investment
+												<br>
+												Analyst
+											</div>
+										</div>
+										<div class="aside-article__author-text">Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit.</div>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+				<section class="news">
+					<div class="news__container">
+						<h2 class="news__title title title--h2">Related Articles</h2>
+						<div class="news__items">
+							<div class="article-card">
+								<div class="article-card__icon">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10Z" stroke="#2CACC6" stroke-width="1.4"></path>
+										<path d="M10 7V10L12 12" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+									</svg>
+								</div>
+								<div class="article-card__body">
+									<a href="#" class="article-card___title">Conversion Optimization</a>
+									<div class="article-card__text">
+										Understands meaning, not just keywords.
+						The cost of a typo: How poor search UX drains European e-commerce revenue
+						products even without exact matches.
+									</div>
+								</div>
+								<figure class="article-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/news-img.webp">
+								</figure>
+								<a href="#" class="article-card__btn button button--secondary button--dark button--fw">Detail</a>
+							</div>
+							<div class="article-card">
+								<div class="article-card__icon">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10Z" stroke="#2CACC6" stroke-width="1.4"></path>
+										<path d="M10 7V10L12 12" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+									</svg>
+								</div>
+								<div class="article-card__body">
+									<a href="#" class="article-card___title">Conversion Optimization</a>
+									<div class="article-card__text">
+										Understands meaning, not just keywords.
+						The cost of a typo: How poor search UX drains European e-commerce revenue
+						products even without exact matches.
+									</div>
+								</div>
+								<figure class="article-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/news-img.webp">
+								</figure>
+								<a href="#" class="article-card__btn button button--secondary button--dark button--fw">Detail</a>
+							</div>
+							<div class="article-card">
+								<div class="article-card__icon">
+									<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10Z" stroke="#2CACC6" stroke-width="1.4"></path>
+										<path d="M10 7V10L12 12" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+									</svg>
+								</div>
+								<div class="article-card__body">
+									<a href="#" class="article-card___title">Conversion Optimization</a>
+									<div class="article-card__text">
+										Understands meaning, not just keywords.
+						The cost of a typo: How poor search UX drains European e-commerce revenue
+						products even without exact matches.
+									</div>
+								</div>
+								<figure class="article-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/news-img.webp">
+								</figure>
+								<a href="#" class="article-card__btn button button--secondary button--dark button--fw">Detail</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="questions" class="questions">
+					<div class="questions__container">
+						<div class="questions__body">
+							<div class="questions__head">
+								<h2 class="questions__title title title--h2">Have questions?</h2>
+								<div class="questions__text">Leave your details, and we’ll get back to you shortly to discuss everything.</div>
+							</div>
+							<form action="#" class="questions__form">
+								<div class="questions__inputs">
+									<div class="input-field">
+										<label class="input-field__label">Name</label>
+										<input autocomplete="off" type="text" name="name" placeholder="Your name" class="input-field__input input">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Phone</label>
+										<input autocomplete="off" type="text" name="tel" placeholder="+380..." class="input-field__input input" data-fls-input-mask="+38 (099) 999-99-99">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Message</label>
+										<textarea name="message" placeholder="Your question or comment..." class="input-field__input input"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="questions__send button">Submit a request</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section id="letstalk" class="letstalk">
+					<div class="letstalk__container">
+						<div class="letstalk__head">
+							<div class="letstalk__subtitle subtitle">Stay in the loop</div>
+							<h2 class="letstalk__title title title--h2">Be first to know.</h2>
+							<div class="letstalk__text">
+								Join our waitlist and get early access to eanell.ai — plus product updates,
+				conversion tips, and European e-commerce insights.
+							</div>
+						</div>
+						<form action="#" class="letstalk__form">
+							<div class="letstalk__field">
+								<input autocomplete="off" type="text" name="email" placeholder="your@store.com" class="letstalk__input input">
+								<button type="submit" class="letstalk__send button">Join Waitlist</button>
+							</div>
+							<div class="letstalk__form-text">No spam. Unsubscribe anytime. 🌿</div>
+						</form>
+						<div class="letstalk__payments">
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/visa.svg" width="40" height="13" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/Mastercard.svg" width="36" height="22" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/gpay.svg" width="38" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/mono.svg" width="42" height="8" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/privat.svg" width="38" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/apay.svg" width="39" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/wfp-logo.svg" width="80" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/wallet.svg" width="20" height="18" alt="Image" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__info">
+							<a href="#" class="footer__logo">
+								<img alt="logo" src="./assets/img/logo.webp">
+							</a>
+							<div class="footer__text">
+								AI-powered search that turns every
+					query into a sale. Built for European e-
+					commerce.
+							</div>
+							<div class="footer__socials socials-block">
+								<a href="#" class="socials-block__link">in</a>
+								<a href="#" class="socials-block__link">𝕏</a>
+								<a href="#" class="socials-block__link">gh</a>
+							</div>
+						</div>
+						<nav class="footer__menu">
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Product</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a data-fls-scrollto="#features" data-fls-scrollto-header="" href="#" class="footer__menu-link">Features</a>
+									</li>
+									<li class="footer__menu-item">
+										<a data-fls-scrollto="#pricing" data-fls-scrollto-header="" href="#" class="footer__menu-link">Pricing</a>
+									</li>
+									<li class="footer__menu-item">
+										<a data-fls-scrollto="#integrations" data-fls-scrollto-header="" href="#" class="footer__menu-link">Integrations</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Changelog</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Company</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">About</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Blog</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Docs</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Legal</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Privacy Policy</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Terms of Service</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">GDPR</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Cookies</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copy">© 2025 eanell.ai — All rights reserved.</div>
+						<div class="footer__lang lang-block" data-drop-block="">
+							<button type="button" class="lang-block__current" data-drop-toggle="">EN</button>
+							<div class="lang-block__dropdown">
+								<a href="#" class="lang-block__link is-active">English</a>
+								<a href="#" class="lang-block__link">Українська</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="module" crossorigin="" src="./js/case.min.js?v=1782987055270"></script>
+	</body>
+</html>

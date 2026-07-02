@@ -321,5 +321,43 @@ if (toggleActiveBtns.length) toggleActiveBtns.forEach((btn) => {
 		btn.classList.toggle("is-active");
 	});
 });
+window.initScrollBlocks = function() {
+	const containers = document.querySelectorAll("[data-scroll-block], [data-scroll-horisontal-block]");
+	if (!containers.length) return;
+	containers.forEach((container) => {
+		const parent = container.parentElement;
+		const isHorizontal = container.hasAttribute("data-scroll-horisontal-block");
+		const threshold = 40;
+		let isRunning = false;
+		const updateClasses = () => {
+			const scrollPos = isHorizontal ? container.scrollLeft : container.scrollTop;
+			const scrollSize = isHorizontal ? container.scrollWidth : container.scrollHeight;
+			const clientSize = isHorizontal ? container.clientWidth : container.clientHeight;
+			parent.classList.toggle("scroll", scrollSize > clientSize);
+			parent.classList.toggle("scroll-x", isHorizontal);
+			parent.classList.toggle("scroll-y", !isHorizontal);
+			const isAtStart = scrollPos <= threshold;
+			const isAtEnd = Math.abs(scrollPos + clientSize - scrollSize) <= threshold;
+			if (isAtStart) {
+				parent.classList.add("scroll-start");
+				parent.classList.remove("scroll-end");
+			} else if (isAtEnd) {
+				parent.classList.add("scroll-end");
+				parent.classList.remove("scroll-start");
+			} else parent.classList.remove("scroll-start", "scroll-end");
+			isRunning = false;
+		};
+		const handleScroll = () => {
+			if (!isRunning) {
+				isRunning = true;
+				requestAnimationFrame(updateClasses);
+			}
+		};
+		container.addEventListener("scroll", handleScroll, { passive: true });
+		new ResizeObserver(handleScroll).observe(container);
+		updateClasses();
+	});
+};
+window.addEventListener("DOMContentLoaded", window.initScrollBlocks);
 //#endregion
 export { getHash as a, getDigFormat as i, bodyLockToggle as n, gotoBlock as o, bodyUnlock as r, uniqArray as s, bodyLockStatus as t };

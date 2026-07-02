@@ -5,7 +5,7 @@
   gap: 16px;
 }
 .menu__body {
-  padding-left: 20.5%;
+  padding-left: 26.5%;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
 }
 .menu__link {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 120%;
   color: var(--color-grey-5);
 }
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 19px;
+  gap: 20px;
 }
 .menu__region {
   max-width: 200px;
@@ -49,6 +49,9 @@
   .menu {
     display: flex;
     align-items: center;
+  }
+  .menu__body {
+    padding-left: 16.5%;
   }
 }
 @media (width < 81.25em) {
@@ -229,7 +232,7 @@
 }
 @media (width >= 73.25em) and (width < 120em) {
   .menu__region {
-    margin-right: clamp( 0.000001px , -37.604275508px  +  3.208556016vw , 24px );
+    margin-right: clamp( 0.000001px , -9.4010669519px  +  0.8021389037vw , 6px );
   }
 }
 @media (width >= 73.25em) {
@@ -239,7 +242,7 @@
 }
 @media (width >= 120em) {
   .menu__region {
-    margin-right: 24px;
+    margin-right: 6px;
   }
 }
 @media (any-hover: hover) {

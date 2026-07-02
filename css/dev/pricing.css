@@ -15,8 +15,8 @@
 }
 .pricing__text {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 170%;
+  font-size: 20px;
+  line-height: 150%;
   color: var(--color-grey-42);
 }
 .pricing__top {
@@ -39,9 +39,9 @@
   padding-bottom: 8px;
 }
 .pricing__toggle-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
   color: var(--color-grey-42);
 }
 .pricing__toggle-save {
@@ -127,9 +127,9 @@
   color: var(--color-grey-5);
 }
 .pricing-card__text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 130%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
   color: var(--color-grey-42);
 }
 .pricing-card__body {
@@ -139,9 +139,9 @@
   gap: 32px;
 }
 .pricing-card__list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
   color: var(--color-grey-42);
   display: flex;
   flex-direction: column;
@@ -196,11 +196,30 @@
   .pricing__title:not(:last-child) {
     margin-bottom: 16px;
   }
+  .pricing__text {
+    font-size: 16px;
+    line-height: 170%;
+  }
+  .pricing__toggle-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+  }
   .pricing-card {
     padding: 24px 20px;
   }
   .pricing-card__price span {
     font-size: 38px;
+  }
+  .pricing-card__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+  }
+  .pricing-card__list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
   }
 }
 @media (width >= 106.25em) {

@@ -15,8 +15,8 @@
 }
 .integrations__text {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 170%;
+  font-size: 20px;
+  line-height: 150%;
   color: var(--color-grey-42);
 }
 .integrations__items {
@@ -67,7 +67,7 @@
 }
 .integrations__bottom-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 130%;
   text-align: center;
   color: var(--color-grey-42);
@@ -86,8 +86,15 @@
   }
 }
 @media (width < 30em) {
+  .integrations__text {
+    font-size: 16px;
+    line-height: 170%;
+  }
   .integrations__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .integrations__bottom-text {
+    font-size: 14px;
   }
 }
 @media (any-hover: hover) {

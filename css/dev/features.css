@@ -49,8 +49,8 @@
 }
 .features__item-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height: 153%;
   color: var(--color-grey-42);
 }
 @media (width < 48em) {
@@ -61,5 +61,9 @@
 @media (width < 30em) {
   .features__items {
     grid-template-columns: 1fr;
+  }
+  .features__item-text {
+    font-size: 14px;
+    line-height: 160%;
   }
 }

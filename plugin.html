@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Opencart</title>
+		<link rel="modulepreload" crossorigin="" href="./js/rolldown-runtime.min.js?v=1782987055271">
+		<link rel="modulepreload" crossorigin="" href="./js/inputmask.min.js?v=1782987055271">
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1782987055271">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1782987055271">
+		<link rel="modulepreload" crossorigin="" href="./js/dynamic.min.js?v=1782987055271">
+		<link rel="modulepreload" crossorigin="" href="./js/menu.min.js?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1782987055271">
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/features.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/howitworks.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/promo.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/questions.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/textsection.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1782987055271">
+		<link rel="stylesheet" crossorigin="" href="./css/header.min.css?v=1782987055271">
+	</head>
+	<body>
+		<div class="wrapper" data-top-position="">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="#" class="header__logo">
+							<img alt="logo" loading="lazy" src="./assets/img/logo.webp">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<div class="menu__head"></div>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a data-fls-scrollto="#cases" data-fls-scrollto-header="" href="#" class="menu__link">Product</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto="#features" data-fls-scrollto-header="" href="#" class="menu__link">Features</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto="#pricing" data-fls-scrollto-header="" href="#" class="menu__link">Pricing</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-scrollto="#integrations" data-fls-scrollto-header="" href="#" class="menu__link">Integrations</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="menu__actions">
+								<div data-sel-block="" class="menu__region region-block">
+									<button type="button" class="region-block__current" data-sel-block-current="">
+										<span class="region-block__value">
+											<span data-sel-block-value="">
+												<span class="region-block__flag">
+													<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/fr.webp">
+												</span>
+												<span class="region-block__name">France</span>
+											</span>
+										</span>
+										<span class="region-block__arrow">
+											<svg width="16" height="9" viewbox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L8 8L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+									</button>
+									<div class="region-block__dropdown" data-sel-block-dropdown="">
+										<div class="region-block__head">
+											<div class="region-block__title">Your region is France</div>
+											<div class="region-block__text">We’ll personalize content for you region</div>
+											<button type="button" class="region-block__btn button">Yes, France is correct</button>
+											<form class="region-block__search search-field">
+												<input autocomplete="off" type="text" name="search" placeholder="Search" class="search-field__input">
+												<button type="submit" class="search-field__icon">
+													<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M6.75 11.25L2.25 15.75M10.5 12.75C13.3995 12.75 15.75 10.3995 15.75 7.5C15.75 4.60051 13.3995 2.25 10.5 2.25C7.6005 2.25 5.25 4.60051 5.25 7.5C5.25 10.3995 7.6005 12.75 10.5 12.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													</svg>
+												</button>
+											</form>
+										</div>
+										<div class="region-block__scroll">
+											<div class="region-block__options">
+												<button data-sel-block-btn="" type="button" class="region-block__option is-active">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/fr.webp">
+													</span>
+													<span class="region-block__name">France</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/ua.webp">
+													</span>
+													<span class="region-block__name">Ukraine</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/nd.webp">
+													</span>
+													<span class="region-block__name">Netherlands</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/de.webp">
+													</span>
+													<span class="region-block__name">Germany</span>
+												</button>
+												<button data-sel-block-btn="" type="button" class="region-block__option">
+													<span class="region-block__flag">
+														<img width="20" height="20" alt="Image" loading="lazy" src="./assets/img/flags/pl.webp">
+													</span>
+													<span class="region-block__name">Poland</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div data-fls-dynamic=".menu__head, 768" class="menu__lang lang-block" data-drop-block="">
+									<button type="button" class="lang-block__current" data-drop-toggle="">EN</button>
+									<div class="lang-block__dropdown">
+										<a href="#" class="lang-block__link is-active">English</a>
+										<a href="#" class="lang-block__link">Українська</a>
+									</div>
+								</div>
+								<button data-fls-scrollto="#questions" data-fls-scrollto-header="" type="button" class="menu__btn button button--third">Get Early Access</button>
+								<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+									<span></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="promo">
+					<div class="promo__bg">
+						<picture>
+							<source media="(max-width: 650px)" srcset="./assets/img/promo-bg-mob.webp">
+							<img alt="Image" loading="lazy" src="./assets/img/hero.webp">
+						</picture>
+					</div>
+					<div class="promo__breadcrumbs breadcrumbs">
+						<div class="breadcrumbs__container">
+							<a href="#" class="breadcrumbs__link">Головна</a>
+							<a href="#" class="breadcrumbs__link">Плагіни</a>
+							<span class="breadcrumbs__link">Opencart</span>
+						</div>
+					</div>
+					<div class="promo__container">
+						<div class="promo__body">
+							<div class="promo__label">Версія 2.4.1</div>
+							<h1 class="promo__title title title--h1">Opencart</h1>
+							<div class="promo__text">Дата оновлення: 05.04.2025</div>
+							<a href="#" class="promo__btn button">Download</a>
+						</div>
+					</div>
+				</section>
+				<section class="textsection textsection--no-aside">
+					<div class="textsection__container">
+						<div class="textsection__body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat.
+							</p>
+							<p>
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+				laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+				laudantium.
+							</p>
+							<div class="howitworks howitworks--no-bg">
+								<div class="howitworks__head">
+									<div class="howitworks__subtitle subtitle">How it works</div>
+									<h2 class="howitworks__title title title--h2">
+										Simple to install.
+										<br>
+										Powerful to run.
+									</h2>
+									<div class="howitworks__text">Three steps to smarter search and higher conversion for your store.</div>
+								</div>
+								<div class="howitworks__items">
+									<div class="howitworks__item">
+										<div class="howitworks__item-icon">
+											<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 11H18M11 18L18 11L11 4" stroke="#2CACC6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+										<div class="howitworks__item-title">Install in minutes</div>
+										<div class="howitworks__item-text">
+											One script tag or native plugin. No backend setup
+							required. Works with every major platform out of the
+							box.
+										</div>
+									</div>
+									<div class="howitworks__item">
+										<div class="howitworks__item-icon">
+											<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#2CACC6" stroke-width="1.5"></path>
+												<path d="M8 11L10 13L14 9" stroke="#2CACC6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+										<div class="howitworks__item-title">AI learns your catalog</div>
+										<div class="howitworks__item-text">
+											eanell.ai reads your products, understands
+							synonyms, categories, and buyer intent — across
+							20+ languages automatically.
+										</div>
+									</div>
+									<div class="howitworks__item">
+										<div class="howitworks__item-icon">
+											<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 14L8 10L12 14L18 8" stroke="#E86487" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+										<div class="howitworks__item-title">Shoppers find. Shoppers buy.</div>
+										<div class="howitworks__item-text">
+											Relevant results from the first keystroke. Conversion
+							increases from day one. Your analytics dashboard
+							shows every gain.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="features" class="features">
+								<div class="features__head">
+									<div class="features__subtitle subtitle">Features</div>
+									<h2 class="features__title title title--h2">Everything your store needs to search smarter.</h2>
+								</div>
+								<div class="features__items">
+									<div class="features__item">
+										<div class="features__item-icon">
+											<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10Z" stroke="#2CACC6" stroke-width="1.4"></path>
+												<path d="M10 7V10L12 12" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+											</svg>
+										</div>
+										<div class="features__item-title">Semantic AI Search</div>
+										<div class="features__item-text">
+											Understands meaning, not just keywords.
+							"Warm jacket for winter" finds the right
+							products even without exact matches.
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__item-icon">
+											<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3 10H17M3 10C3 6.1 6 3 10 3M3 10C3 13.9 6 17 10 17" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+											</svg>
+										</div>
+										<div class="features__item-title">Typo & Synonym Tolerance</div>
+										<div class="features__item-text">
+											Fuzzy matching and synonym expansion mean
+							shoppers always find results — even with
+							imperfect spelling or local slang.
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__item-icon">
+											<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#2CACC6" stroke-width="1.4"></path>
+												<path d="M7 10H13M10 7V13" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+											</svg>
+										</div>
+										<div class="features__item-title">Multilingual — 20+ Languages</div>
+										<div class="features__item-text">
+											Native support for German, French, Dutch,
+							Polish, Ukrainian, and 15+ more. One
+							deployment for all your markets.
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__item-icon">
+											<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3 14L7 10L10 13L17 6" stroke="#E86487" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+										<div class="features__item-title">Real-time Analytics</div>
+										<div class="features__item-text">
+											See what shoppers search for, where they
+							drop off, and what converts. Actionable
+							insights in a clean dashboard.
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__item-icon">
+											<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C11.8565 17 13.637 16.2625 14.9497 14.9497C16.2625 13.637 17 11.8565 17 10C17 8.14348 16.2625 6.36301 14.9497 5.05025C13.637 3.7375 11.8565 3 10 3Z" stroke="#E86487" stroke-width="1.4"></path>
+												<path d="M7 10L9 12L13 8" stroke="#E86487" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+										<div class="features__item-title">Personalized Results</div>
+										<div class="features__item-text">
+											Learns from shopper behavior to surface more
+							relevant results over time. The more you use it,
+							the smarter it gets.
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__item-icon">
+											<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14 4H6C4.89543 4 4 4.89543 4 6V14C4 15.1046 4.89543 16 6 16H14C15.1046 16 16 15.1046 16 14V6C16 4.89543 15.1046 4 14 4Z" stroke="#2CACC6" stroke-width="1.4"></path>
+												<path d="M8 10H12M10 8V12" stroke="#2CACC6" stroke-width="1.4" stroke-linecap="round"></path>
+											</svg>
+										</div>
+										<div class="features__item-title">No-code Setup</div>
+										<div class="features__item-text">
+											Install via plugin or one line of JavaScript. Your
+							team is up and running in under 30 minutes —
+							no developer needed.
+										</div>
+									</div>
+								</div>
+							</div>
+							<h6>Для кого і для чого?</h6>
+							<ul class="list-check">
+								<li>Для магазинів нішевих товарів</li>
+								<li>Для малого та середнього бізнесу</li>
+								<li>За відсутності штатних розробників</li>
+								<li>Коли бракує часу на впровадження</li>
+								<li>Якщо треба смарт-пошук “тут і зараз”</li>
+							</ul>
+							<p>
+								<b class="middle-font">Ідеальний для бізнесів зі спеціалізованим асортиментом.</b>
+								Наприклад: білизна,
+				парфуми, канцелярія.
+				Доступна швидка візуалізація товарів при звуженій видачі — без гортання та з фільтрацією “за
+				категорією”.
+							</p>
+							<table>
+								<thead>
+									<tr>
+										<th>Функція</th>
+										<th>OpenCart 2.3</th>
+										<th>OpenCart 3.0</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Автоматичний розрахунок доставки</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Підтримка Nova Poshta</td>
+										<td>
+											<span class="table-value">-</span>
+										</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Підтримка Укрпошти</td>
+										<td>
+											<span class="table-value">-</span>
+										</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Відстеження відправлень</td>
+										<td>
+											<span class="table-value">-</span>
+										</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Масове оновлення статусів</td>
+										<td>
+											<span class="table-value">-</span>
+										</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+									</tr>
+									<tr>
+										<td>API інтеграція</td>
+										<td>
+											<span class="table-value">-</span>
+										</td>
+										<td>
+											<span class="table-value">+</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section id="questions" class="questions">
+					<div class="questions__container">
+						<div class="questions__body">
+							<div class="questions__head">
+								<h2 class="questions__title title title--h2">Have questions?</h2>
+								<div class="questions__text">Leave your details, and we’ll get back to you shortly to discuss everything.</div>
+							</div>
+							<form action="#" class="questions__form">
+								<div class="questions__inputs">
+									<div class="input-field">
+										<label class="input-field__label">Name</label>
+										<input autocomplete="off" type="text" name="name" placeholder="Your name" class="input-field__input input">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Phone</label>
+										<input autocomplete="off" type="text" name="tel" placeholder="+380..." class="input-field__input input" data-fls-input-mask="+38 (099) 999-99-99">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Message</label>
+										<textarea name="message" placeholder="Your question or comment..." class="input-field__input input"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="questions__send button">Submit a request</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section id="letstalk" class="letstalk">
+					<div class="letstalk__container">
+						<div class="letstalk__head">
+							<div class="letstalk__subtitle subtitle">Stay in the loop</div>
+							<h2 class="letstalk__title title title--h2">Be first to know.</h2>
+							<div class="letstalk__text">
+								Join our waitlist and get early access to eanell.ai — plus product updates,
+				conversion tips, and European e-commerce insights.
+							</div>
+						</div>
+						<form action="#" class="letstalk__form">
+							<div class="letstalk__field">
+								<input autocomplete="off" type="text" name="email" placeholder="your@store.com" class="letstalk__input input">
+								<button type="submit" class="letstalk__send button">Join Waitlist</button>
+							</div>
+							<div class="letstalk__form-text">No spam. Unsubscribe anytime. 🌿</div>
+						</form>
+						<div class="letstalk__payments">
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/visa.svg" width="40" height="13" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/Mastercard.svg" width="36" height="22" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/gpay.svg" width="38" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/mono.svg" width="42" height="8" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/privat.svg" width="38" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/apay.svg" width="39" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/wfp-logo.svg" width="80" height="16" alt="Image" loading="lazy">
+							</div>
+							<div class="letstalk__payment">
+								<img src="./assets/img/payments/wallet.svg" width="20" height="18" alt="Image" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__info">
+							<a href="#" class="footer__logo">
+								<img alt="logo" src="./assets/img/logo.webp">
+							</a>
+							<div class="footer__text">
+								AI-powered search that turns every
+					query into a sale. Built for European e-
+					commerce.
+							</div>
+							<div class="footer__socials socials-block">
+								<a href="#" class="socials-block__link">in</a>
+								<a href="#" class="socials-block__link">𝕏</a>
+								<a href="#" class="socials-block__link">gh</a>
+							</div>
+						</div>
+						<nav class="footer__menu">
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Product</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a data-fls-scrollto="#features" data-fls-scrollto-header="" href="#" class="footer__menu-link">Features</a>
+									</li>
+									<li class="footer__menu-item">
+										<a data-fls-scrollto="#pricing" data-fls-scrollto-header="" href="#" class="footer__menu-link">Pricing</a>
+									</li>
+									<li class="footer__menu-item">
+										<a data-fls-scrollto="#integrations" data-fls-scrollto-header="" href="#" class="footer__menu-link">Integrations</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Changelog</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Company</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">About</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Blog</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Docs</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__menu-title">Legal</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Privacy Policy</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Terms of Service</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">GDPR</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link">Cookies</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copy">© 2025 eanell.ai — All rights reserved.</div>
+						<div class="footer__lang lang-block" data-drop-block="">
+							<button type="button" class="lang-block__current" data-drop-toggle="">EN</button>
+							<div class="lang-block__dropdown">
+								<a href="#" class="lang-block__link is-active">English</a>
+								<a href="#" class="lang-block__link">Українська</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="module" crossorigin="" src="./js/plugin.min.js?v=1782987055271"></script>
+	</body>
+</html>

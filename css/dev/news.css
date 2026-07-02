@@ -1,0 +1,24 @@
+.news {
+  padding-block: 100px;
+}
+.news__title {
+  margin-bottom: 40px;
+}
+.news__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+@media (width < 48em) {
+  .news {
+    padding-block: 50px;
+  }
+  .news__title {
+    margin-bottom: 24px;
+  }
+}
+@media (width < 30em) {
+  .news__items {
+    gap: 7px;
+  }
+}
